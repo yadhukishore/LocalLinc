@@ -1,0 +1,263 @@
+*body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+}
+.header-left img{
+    border-radius: 50%;
+    width: 70px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.header-left h3{
+    padding-top: 4px;
+   
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: medium;
+}
+.header-left{
+    display: flex;
+    align-items: flex-start;
+    cursor: context-menu;
+    
+}
+.header-middle form{
+    border: 0px;
+    background-color: azure;
+    height: 35px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    background-color: white;
+}
+.header-middle input{
+    width: 700px;
+    padding: 10px;
+    margin: 0px;
+    border-top-left-radius:20px ;
+    border-bottom-left-radius: 20px ;
+    border-color: #a978e1;
+}
+.header-middle{
+    padding-top: 10px;
+    
+}
+.header-middle button{
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: #c39eed;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.user_avatar{
+    
+    border-radius: 50%;
+    width: 45px;
+}
+
+.header-info {
+    display: flex;
+    align-items: flex-start;
+    padding: 8px;
+    cursor: pointer;
+}
+.header-info h4{
+    padding-left: 5px;
+    font-size: small;
+}
+.header-info:hover{
+    background-color: #a978e1;
+    color: whitesmoke;
+    border-radius: 60px;
+    
+    transition: 500ms;
+   
+}
+.header-right{
+    display: flex;
+    justify-content: space-between;
+}
+.header-right .material-symbols-outlined{
+  margin: 1px 10px;
+  padding: 15px;
+  padding-left: 50px;
+
+}
+.header-right .material-symbols-outlined:hover{
+    cursor: pointer;
+    color: #a978e1;
+   
+   
+    
+}
+.header-right .material-symbols-outlined {
+    position: relative; /* This is important for positioning the pseudo-element */
+}
+.header-right .material-symbols-outlined::after {
+    content: "Put Location"; /* The text you want to display on hover */
+    position: absolute; /* Position absolutely relative to the parent span */
+    top: 50px; /* Position it below the parent span */
+    left: 55px; /* Align it horizontally with the center of the parent span */
+    transform: translateX(-50%); /* Center it horizontally */
+    opacity: 0; /* Initially, make it invisible */
+    transition: opacity 0.3s; /* Add a transition for smooth visibility changes */
+    font-size: xx-small;
+    font-style: normal;
+    color: black;
+}
+.header-right .material-symbols-outlined:hover::after {
+    opacity: 1; /* Make it visible on hover */
+    font-size: xx-small;
+    font-style: normal;
+    color: black;
+}
+.main-header{
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0px 10px 20px -10px rgb(0,0,0,0.75);
+    
+}
+.mainbody{
+    height:calc(100vh-70px);
+    display: flex;
+    overflow: hidden;
+}
+.sidebar{
+    height: 100%;
+    width: 230px;
+    background-color: white;
+    overflow-y: scroll;
+    
+   
+}
+.sidebar-categories{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.sidebar-categorY{
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+    
+}
+.sidebar-categorY span{
+    margin-left: 16px;
+}
+.sidebar-categorY span:hover{
+    transform: translate(9px);
+}
+.sidebar-categories :hover{
+    cursor: pointer;
+    background-color: #c39eed;
+    border-radius: 8px;
+    
+}
+
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+.shopes{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px;
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+}
+.shopes_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* Add a border to the right side of each single shop element */
+.single_shop {
+    border-right: 1px solid #c39eed;
+    padding-right: 10px; /* Add some spacing between the border and shop content */
+    border-bottom: 1px solid #c39eed;
+    padding-top: 20px;
+}
+
+/* Style the last single shop to remove the border */
+.single_shop:last-child {
+    border-right: none;
+    
+}
+
+.shop_thumbnail{
+    width: 100%;
+    height: 170px;
+}
+.shop_thumbnail img{
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+   
+
+}
+.pop-image {
+    transition: transform 0.3s; /* Apply a smooth transition */
+  }
+  
+  .pop-image:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+  }
+
+  .shop_detail{
+    display: flex;
+    margin-top: 10px;
+    border: none;
+  }
+  .titleofshop{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    
+
+  }
+  .shop_detail :hover{
+background-color: #ddd;
+
+  }
+  .titleofshop h3{
+    color: rgb(3, 3, 3);
+    line-height: 18px;
+    font-size: 14px;
+    margin-bottom: 6px;
+    
+    
+  }
+  .titleofshop h4{
+   
+    text-decoration:none;
+    color: rgb(96, 96,96);
+    font-size: 10px;
+  }
+  .titleofshop span{
+    text-decoration:none;
+    color: rgb(96, 96,96);
+    font-size: 14px;
+  }
+  h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(110, 76, 133);
+}
+  
