@@ -99,13 +99,13 @@ font-size: medium;
     
 }
 .header-right .material-symbols-outlined {
-    position: relative; /* This is important for positioning the pseudo-element */
+    position: relative; 
 }
 .header-right .material-symbols-outlined::after {
-    content: "Put Location"; /* The text you want to display on hover */
-    position: absolute; /* Position absolutely relative to the parent span */
-    top: 50px; /* Position it below the parent span */
-    left: 55px; /* Align it horizontally with the center of the parent span */
+    content: "Put Location"; 
+    position: absolute; 
+    top: 50px; 
+    left: 55px; 
     transform: translateX(-50%); /* Center it horizontally */
     opacity: 0; /* Initially, make it invisible */
     transition: opacity 0.3s; /* Add a transition for smooth visibility changes */
